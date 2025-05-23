@@ -1,1 +1,94 @@
 /* Add you CSS here */
+
+/* Set a background color and font for the whole page */
+body {
+  background-color: #f9f9ff; /* fallback color */
+  font-family: Arial, sans-serif; /* easy-to-read font */
+  margin: 0;
+  padding: 0;
+  /* Set the background image */
+  background-image: url('img/pngtree-digital-code-blue-light-effect-abstract-background-image_770459.jpg');
+  background-size: cover; /* make image cover the whole page */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+/* Add an overlay to make the background image more opaque and text easier to read */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(245, 250, 255, 0.85); /* semi-transparent light blue overlay */
+  z-index: -1; /* place behind all content */
+}
+
+/* Style the header */
+header {
+  background-color: #4a90e2; /* blue background */
+  color: white; /* white text */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #1a237e; /* even darker blue for navbar */
+  padding: 20px 0; /* make navbar taller */
+}
+
+/* Style the navigation list */
+nav ul {
+  list-style: none; /* remove bullet points */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* center the links */
+}
+
+/* Style each navigation item */
+nav ul li {
+  display: inline; /* display links in a row */
+  margin: 0 15px; /* space between links */
+}
+
+/* Style the navigation links */
+nav ul li a {
+  color: white; /* white text */
+  text-decoration: none; /* remove underline */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+  color: #b3d1ff; /* light blue on hover */
+}
+
+/* Add space around each section */
+section {
+  background-color: #eaf2fb; /* very light blue for sections */
+  margin: 20px auto; /* space above and below, center horizontally */
+  padding: 20px;
+  max-width: 600px; /* limit width for readability */
+  border-radius: 8px; /* rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* subtle shadow */
+}
+
+/* Style section headings */
+section h2 {
+  color: #4a90e2; /* blue color for headings */
+}
+
+/* Style the skills and projects lists */
+ul {
+  padding-left: 20px; /* indent list items */
+}
+
+/* Style the contact email */
+#contact p {
+  font-weight: bold;
+}
